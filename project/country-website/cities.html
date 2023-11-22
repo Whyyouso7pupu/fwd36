@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Country website cities page" />
+    <title>Country Website</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="scripts/navigation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Zen+Loop:ital@0;1&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml" />
+    <!-- 
+    Use text, video and image content that falls under creative commons licenses. For text, you canuse content from Wikipedia or use Lorem Ipsum placeholder text.
+
+    Create four HTML webpages:
+    three about the location,(cities, food, culture)
+    one to give credit to the creators of your content with links to their websites
+
+    The website should include all the following HTML elements:
+    one table
+    two images
+    one audio or video element
+    one blockquote element
+    site navigation with links to every page and reused on all pages
+    the meta tag for an SEO description on each page
+
+    Include a favicon on all pages of the website that works for mobile, tablet, and desktop devices
+
+    Create at least one external stylesheet that applies to all the webpages.
+
+    The website should include all the following CSS features:
+    CSS Grid used at least once
+    CSS Flexbox used at least once
+    At least one custom font used 
+
+    320px wide to at least 1920px wide
+-->
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header" id="top">
+        <a href="index.html"
+          ><img class="site-logo" src="favicon/favicon-japan.svg" alt="Favicon"
+        /></a>
+        <nav class="site-navigation" id="site-navigation">
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              class="menu-icon"
+            >
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-main-cities">
+        <header class="page-header-cities">
+          <h1>Cities</h1>
+        </header>
+        <div class="section-cities">
+          <article class="article-tokyo">
+            <a href="https://www.japan-guide.com/e/e2164.html"
+              ><h2>Tokyo</h2></a
+            >
+            <blockquote
+              cite="https://www.intrepidscout.com/quotes-about-japan/"
+            >
+              <p>
+                “Japan, not only a mega-busy city that thrives on electronics
+                and efficiency, actually has an almost sacred appreciation of
+                nature. One must travel outside of Tokyo to truly experience the
+                'old Japan' and more importantly feel these aspects of Japanese
+                culture.” — Apolo Ohno
+              </p>
+            </blockquote>
+            <table>
+              <caption>
+                Climate data for Tokyo
+              </caption>
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Daily mean °C (°F)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>January</td>
+                  <td>5.4 (41.7)</td>
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>6.1 (43.0)</td>
+                </tr>
+                <tr>
+                  <td>March</td>
+                  <td>9.4 (48.9)</td>
+                </tr>
+                <tr>
+                  <td>April</td>
+                  <td>14.3 (57.7)</td>
+                </tr>
+                <tr>
+                  <td>May</td>
+                  <td>18.8 (65.8)</td>
+                </tr>
+                <tr>
+                  <td>June</td>
+                  <td>21.9 (71.4)</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>25.7 (78.3)</td>
+                </tr>
+                <tr>
+                  <td>August</td>
+                  <td>26.9 (80.4)</td>
+                </tr>
+                <tr>
+                  <td>September</td>
+                  <td>23.3 (73.9)</td>
+                </tr>
+                <tr>
+                  <td>October</td>
+                  <td>18.0 (64.4)</td>
+                </tr>
+                <tr>
+                  <td>November</td>
+                  <td>12.5 (54.5)</td>
+                </tr>
+                <tr>
+                  <td>December</td>
+                  <td>7.7 (45.9)</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <video class="video-tokyo" playsinline autoplay loop muted>
+            <source src="videos/tokyo.mp4" type="video/mp4" />
+            Your Browser Does Not Support The Video Tag
+          </video>
+          <article class="article-osaka">
+            <a href="https://www.japan-guide.com/e/e2157.html"
+              ><h2>Osaka</h2></a
+            >
+            <blockquote
+              cite="https://www.intrepidscout.com/quotes-about-japan/"
+            >
+              <p>
+                “Tokyo may have more money and Kyoto more culture; Nara may have
+                more history and Kobe more style. But Osaka has the biggest
+                heart.” — Vikas Swarup
+              </p>
+            </blockquote>
+            <table>
+              <caption>
+                Climate data for Osaka
+              </caption>
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Daily mean °C (°F)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>January</td>
+                  <td>6.2 (43.2)</td>
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>6.6 (43.9)</td>
+                </tr>
+                <tr>
+                  <td>March</td>
+                  <td>9.9 (49.8)</td>
+                </tr>
+                <tr>
+                  <td>April</td>
+                  <td>15.2 (59.4)</td>
+                </tr>
+                <tr>
+                  <td>May</td>
+                  <td>20.1 (68.2)</td>
+                </tr>
+                <tr>
+                  <td>June</td>
+                  <td>23.6 (74.5)</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>27.7 (81.9)</td>
+                </tr>
+                <tr>
+                  <td>August</td>
+                  <td>29.0 (84.2)</td>
+                </tr>
+                <tr>
+                  <td>September</td>
+                  <td>25.2 (77.4)</td>
+                </tr>
+                <tr>
+                  <td>October</td>
+                  <td>19.5 (67.1)</td>
+                </tr>
+                <tr>
+                  <td>November</td>
+                  <td>13.8 (56.8)</td>
+                </tr>
+                <tr>
+                  <td>December</td>
+                  <td>8.7 (47.7)</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <video class="video-osaka" playsinline autoplay loop muted>
+            <source src="videos/osaka.mp4" type="video/mp4" />
+            Your Browser Does Not Support The Video Tag
+          </video>
+          <article class="article-kyoto">
+            <a href="https://www.japan-guide.com/e/e2158.html"
+              ><h2>Kyoto</h2></a
+            >
+            <blockquote
+              cite="https://www.intrepidscout.com/quotes-about-japan/"
+            >
+              <p>
+                “I loved the quiet places in Kyoto, the places that held the
+                world within a windless moment. Inside the temples, Nature held
+                her breath. All longing was put to sleep in the stillness, and
+                all was distilled into a clean simplicity. The smell of
+                woodsmoke, the drift of incense; a procession of monks in
+                black-and-gold robes, one of them giggling in a voice yet
+                unbroken; a touch of autumn in the air, a sense of gathering
+                rain.” — Pico Iyer
+              </p>
+            </blockquote>
+            <table>
+              <caption>
+                Climate data for Kyoto
+              </caption>
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Daily mean °C (°F)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>January</td>
+                  <td>4.8 (40.6)</td>
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>5.4 (41.7)</td>
+                </tr>
+                <tr>
+                  <td>March</td>
+                  <td>8.8 (47.8)</td>
+                </tr>
+                <tr>
+                  <td>April</td>
+                  <td>14.4 (57.9)</td>
+                </tr>
+                <tr>
+                  <td>May</td>
+                  <td>19.5 (67.1)</td>
+                </tr>
+                <tr>
+                  <td>June</td>
+                  <td>23.3 (73.9)</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>27.3 (81.1)</td>
+                </tr>
+                <tr>
+                  <td>August</td>
+                  <td>28.5 (83.3)</td>
+                </tr>
+                <tr>
+                  <td>September</td>
+                  <td>24.4 (75.9)</td>
+                </tr>
+                <tr>
+                  <td>October</td>
+                  <td>18.4 (65.1)</td>
+                </tr>
+                <tr>
+                  <td>November</td>
+                  <td>12.5 (54.5)</td>
+                </tr>
+                <tr>
+                  <td>December</td>
+                  <td>7.2 (45.0)</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <video class="video-kyoto" playsinline autoplay loop muted>
+            <source src="videos/kyoto.mp4" type="video/mp4" />
+            Your Browser Does Not Support The Video Tag
+          </video>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <a href="#top">
+          <svg
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            class="top-icon"
+          >
+            <title>Top Icon</title>
+            <path
+              d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998zm1.5 0c0-4.69 3.808-8.498 8.498-8.498s8.497 3.808 8.497 8.498-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498zm4.715-1.528s1.505-1.502 3.259-3.255c.147-.146.338-.219.53-.219s.384.073.53.219c1.754 1.753 3.259 3.254 3.259 3.254.145.145.217.336.216.527 0 .191-.074.383-.22.53-.293.293-.766.294-1.057.004l-1.978-1.978v6.694c0 .413-.336.75-.75.75s-.75-.337-.75-.75v-6.694l-1.978 1.979c-.29.289-.762.286-1.055-.007-.147-.146-.22-.338-.221-.53-.001-.19.071-.38.215-.524z"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+        <p>&copy; FWD 2023. For Educational Purposes</p>
+      </footer>
+    </div>
+  </body>
+</html>

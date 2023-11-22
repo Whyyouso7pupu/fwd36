@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Country website culture page" />
+    <title>Country Website</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="scripts/navigation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Zen+Loop:ital@0;1&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml" />
+    <!-- 
+    Use text, video and image content that falls under creative commons licenses. For text, you canuse content from Wikipedia or use Lorem Ipsum placeholder text.
+
+    Create four HTML webpages:
+    three about the location,(cities, food, culture)
+    one to give credit to the creators of your content with links to their websites
+
+    The website should include all the following HTML elements:
+    one table
+    two images
+    one audio or video element
+    one blockquote element
+    site navigation with links to every page and reused on all pages
+    the meta tag for an SEO description on each page
+
+    Include a favicon on all pages of the website that works for mobile, tablet, and desktop devices
+
+    Create at least one external stylesheet that applies to all the webpages.
+
+    The website should include all the following CSS features:
+    CSS Grid used at least once
+    CSS Flexbox used at least once
+    At least one custom font used 
+
+    320px wide to at least 1920px wide
+-->
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header" id="top">
+        <a href="index.html"
+          ><img class="site-logo" src="favicon/favicon-japan.svg" alt="Favicon"
+        /></a>
+        <nav class="site-navigation" id="site-navigation">
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              class="menu-icon"
+            >
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-main-culture">
+        <header class="page-header-culture">
+          <h1>Culture</h1>
+        </header>
+        <div class="section-culture">
+          <article class="article-wabi-sabi">
+            <h2>Wabi-Sabi</h2>
+            <p>
+              In traditional Japanese aesthetics, wabi-sabi (侘寂) is a world
+              view centered on the acceptance of transience and imperfection.
+              The aesthetic is sometimes described as one of appreciating beauty
+              that is "imperfect, impermanent, and incomplete" in nature. It is
+              prevalent in many forms of Japanese art.
+            </p>
+          </article>
+          <img
+            class="image-wabi-sabi"
+            src="images/wabi-sabi.jpg"
+            alt="Wabi-Sabi"
+          />
+          <article class="article-omotenashi">
+            <h2>Omotenashi</h2>
+            <p>
+              Omotenashi (Japanese: おもてなし, 御持成) is a Japanese expression
+              that roughly describes concepts of hospitality as well as
+              mindfulness. The term developed particularly around the roles of
+              the host at a Japanese tea ceremony. The term gained increased
+              awareness internationally through the 2020 Summer Olympics in
+              Tokyo.
+            </p>
+          </article>
+          <img
+            class="image-omotenashi"
+            src="images/omotenashi.jpg"
+            alt="Omotenashi"
+          />
+          <article class="article-media">
+            <h2>Media</h2>
+            <p>
+              Japan has one of the oldest and largest film industries globally.
+              Ishirō Honda's Godzilla became an international icon of Japan and
+              spawned an entire subgenre of kaiju films, as well as the
+              longest-running film franchise in history. Japanese comics, known
+              as manga, developed in the mid-20th century and have become
+              popular worldwide. A large number of manga series have become some
+              of the best-selling comics series of all time, rivalling the
+              American comics industry. Japanese animated films and television
+              series, known as anime, were largely influenced by Japanese manga
+              and have become highly popular internationally.
+            </p>
+          </article>
+          <img class="image-ghibli" src="images/ghibli.jpg" alt="Ghibli" />
+          <article class="article-industry">
+            <h2>Industry</h2>
+            <p>
+              Japan has a large industrial capacity and is home to some of the
+              "largest and most technologically advanced producers of motor
+              vehicles, machine tools, steel and nonferrous metals, ships,
+              chemical substances, textiles, and processed foods".
+            </p>
+          </article>
+          <img
+            class="image-industry"
+            src="images/honda-engine.jpg"
+            alt="Industry"
+          />
+          <article class="article-baseball">
+            <h2>Baseball</h2>
+            <p>
+              Baseball is the most popular sport in the country. Japan's top
+              professional league, Nippon Professional Baseball (NPB), was
+              established in 1936.
+            </p>
+          </article>
+          <img
+            class="image-baseball"
+            src="images/baseball.jpg"
+            alt="Baseball"
+          />
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <a href="#top">
+          <svg
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            class="top-icon"
+          >
+            <title>Top Icon</title>
+            <path
+              d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998zm1.5 0c0-4.69 3.808-8.498 8.498-8.498s8.497 3.808 8.497 8.498-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498zm4.715-1.528s1.505-1.502 3.259-3.255c.147-.146.338-.219.53-.219s.384.073.53.219c1.754 1.753 3.259 3.254 3.259 3.254.145.145.217.336.216.527 0 .191-.074.383-.22.53-.293.293-.766.294-1.057.004l-1.978-1.978v6.694c0 .413-.336.75-.75.75s-.75-.337-.75-.75v-6.694l-1.978 1.979c-.29.289-.762.286-1.055-.007-.147-.146-.22-.338-.221-.53-.001-.19.071-.38.215-.524z"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+        <p>&copy; FWD 2023. For Educational Purposes</p>
+      </footer>
+    </div>
+  </body>
+</html>

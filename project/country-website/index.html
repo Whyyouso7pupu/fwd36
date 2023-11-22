@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Country website home page" />
+    <title>Country Website</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="scripts/navigation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Zen+Loop:ital@0;1&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml" />
+    <!-- 
+    Use text, video and image content that falls under creative commons licenses. For text, you canuse content from Wikipedia or use Lorem Ipsum placeholder text.
+
+    Create four HTML webpages:
+    three about the location, (cities, food, culture)
+    one to give credit to the creators of your content with links to their websites
+
+    The website should include all the following HTML elements:
+    one table
+    two images
+    one audio or video element
+    one blockquote element
+    site navigation with links to every page and reused on all pages
+    the meta tag for an SEO description on each page
+
+    Include a favicon on all pages of the website that works for mobile, tablet, and desktop devices
+
+    Create at least one external stylesheet that applies to all the webpages.
+
+    The website should include all the following CSS features:
+    CSS Grid used at least once
+    CSS Flexbox used at least once
+    At least one custom font used 
+
+    320px wide to at least 1920px wide
+-->
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <a href="index.html"
+          ><img class="site-logo" src="favicon/favicon-japan.svg" alt="Favicon"
+        /></a>
+        <nav class="site-navigation" id="site-navigation">
+          <!-- menu hamburger button -->
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              class="menu-icon"
+            >
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="nav-menu-home" id="header-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-main-home">
+        <header class="page-header-home">
+          <h1><a href="cities.html">Japan</a></h1>
+        </header>
+        <video class="home-video" playsinline autoplay loop muted>
+          <source src="videos/home.mp4" type="video/mp4" />
+          Your Browser Does Not Support The Video Tag
+        </video>
+      </main>
+
+      <footer class="site-footer-home">
+        <p>&copy; FWD 2023. For Educational Purposes</p>
+      </footer>
+    </div>
+  </body>
+</html>

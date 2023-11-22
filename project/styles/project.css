@@ -1,0 +1,253 @@
+/* Typography
+--------------------------------------------- */
+* {
+  padding: unset;
+  margin: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: rgb(255, 209, 0);
+  color: rgb(17, 17, 17);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+/* Elements
+--------------------------------------------- */
+
+ul {
+  list-style: none;
+}
+
+img {
+  height: 300px;
+  border-radius: 1rem;
+}
+
+/* Links
+--------------------------------------------- */
+
+a,
+a:visited {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 1px dotted rgb(17, 17, 17);
+  border-radius: 1rem;
+}
+
+/* Header
+--------------------------------------------- */
+.site-header a {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .site-header a {
+    font-size: 2.5rem;
+  }
+}
+
+.site-header {
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*hamburger menu*/
+.site-navigation a {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.site-navigation ul {
+  margin: 0;
+  text-align: center;
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgb(255, 209, 0);
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent; /*change toggle color*/
+  border: 0;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 0;
+  }
+
+  .site-navigation a {
+    line-height: 5rem;
+  }
+}
+
+.menu-toggle:focus {
+  outline: 1px dotted;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+
+/* Main
+--------------------------------------------- */
+h1 {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+.section-about h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.section-about {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70%;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .section-about {
+    max-width: 50rem;
+    width: 80%;
+  }
+}
+
+.section-projects h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.section-projects h3 {
+  font-size: 1.5rem;
+}
+
+.section-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.project {
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 65rem;
+  }
+}
+
+.section-contact h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.section-contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 65rem;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .section-contact {
+    max-width: 65rem;
+  }
+}
+
+.section-contact a {
+  border-radius: 1rem;
+  border: 2px solid rgb(17, 17, 17);
+  padding: 0.15rem 1rem;
+  margin: 1rem;
+}
+
+/* Footer
+--------------------------------------------- */
+.site-footer {
+  text-align: center;
+  margin: 1rem;
+}
+
+/* Others
+---------------------------------------------*/
+
+@keyframes moveUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}

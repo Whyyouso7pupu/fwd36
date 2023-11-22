@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Country website cuisine page" />
+    <title>Country Website</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script defer src="scripts/navigation.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&family=Zen+Loop:ital@0;1&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml" />
+    <!-- 
+    Use text, video and image content that falls under creative commons licenses. For text, you canuse content from Wikipedia or use Lorem Ipsum placeholder text.
+
+    Create four HTML webpages:
+    three about the location,(cities, food, culture)
+    one to give credit to the creators of your content with links to their websites
+
+    The website should include all the following HTML elements:
+    one table
+    two images
+    one audio or video element
+    one blockquote element
+    site navigation with links to every page and reused on all pages
+    the meta tag for an SEO description on each page
+
+    Include a favicon on all pages of the website that works for mobile, tablet, and desktop devices
+
+    Create at least one external stylesheet that applies to all the webpages.
+
+    The website should include all the following CSS features:
+    CSS Grid used at least once
+    CSS Flexbox used at least once
+    At least one custom font used 
+
+    320px wide to at least 1920px wide
+-->
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header" id="top">
+        <a href="index.html"
+          ><img class="site-logo" src="favicon/favicon-japan.svg" alt="Favicon"
+        /></a>
+        <nav class="site-navigation" id="site-navigation">
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
+              class="menu-icon"
+            >
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
+
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cities.html">Cities</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="credits.html">Credits</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-main-cuisine">
+        <header class="page-header-cuisine">
+          <h1>Cuisine</h1>
+        </header>
+        <div class="section-cuisine">
+          <article class="article-ramen">
+            <a
+              href="https://www.google.com/search?q=best+ramen+near+me&oq=best+ra&gs_lcrp=EgZjaHJvbWUqDAgAEEUYOxjJAxiABDIMCAAQRRg7GMkDGIAEMgcIARAAGIAEMgYIAhBFGDkyDQgDEAAYkgMYgAQYigUyDQgEEC4YxwEY0QMYgAQyBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQg3NDEzajBqOagCALACAA&sourceid=chrome&ie=UTF-8"
+              ><h2>Ramen</h2></a
+            >
+            <blockquote
+              cite="https://www.intrepidscout.com/quotes-about-japan/"
+            >
+              <p>
+                “No, Ramen is not good for you. But in Japan, our favourite
+                thing to do after drinking all night, especially in Sapporo
+                where it is freezing cold, is to go to the Ramen place at two,
+                three in the morning.” — Cary Fukunaga
+              </p>
+            </blockquote>
+          </article>
+          <img
+            class="image-ramen"
+            src="images/ichiran-ramen.jpg"
+            alt="Ichiran Ramen"
+          />
+          <article class="article-sushi">
+            <a
+              href="https://www.google.com/search?q=best+sushi+near+me&sca_esv=583450257&ei=kPNXZfzwB4G70PEP5LepsAY&ved=0ahUKEwj8-OfBlMyCAxWBHTQIHeRbCmYQ4dUDCBA&uact=5&oq=best+sushinear+me&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWJlc3Qgc3VzaGluZWFyIG1lMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHMgQQABhHSJ4IUABYAHAAeAKQAQCYAQCgAQCqAQC4AQPIAQDiAwQYACBB4gMFEgExIECIBgGQBgc&sclient=gws-wiz-serp"
+              ><h2>Sushi</h2></a
+            >
+            <blockquote
+              cite="https://www.intrepidscout.com/quotes-about-japan/"
+            >
+              <p>“Happiness is going on a sushi date in Japan.”</p>
+            </blockquote>
+          </article>
+          <img class="image-sushi" src="images/sushi.jpg" alt="Sushi" />
+          <article class="article-soba">
+            <a
+              href="https://www.google.com/search?q=best+soba+near+me&sca_esv=583450257&ei=kPNXZfzwB4G70PEP5LepsAY&ved=0ahUKEwj8-OfBlMyCAxWBHTQIHeRbCmYQ4dUDCBA&uact=5&oq=best+soba+near+me&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWJlc3Qgc29iYSBuZWFyIG1lMggQABgHGB4YEzIIEAAYBxgeGBMyBxAAGIAEGBMyCBAAGAgYHhgTMggQABgIGB4YEzIIEAAYCBgeGBNIrRlQ6AdYthhwAHgDkAEAmAFooAHkA6oBAzQuMbgBA8gBAPgBAcICBBAAGEfCAgkQABiABBgNGBPCAgoQABgIGAcYHhgT4gMEGAAgQeIDBRIBMSBAiAYBkAYH&sclient=gws-wiz-serp"
+              ><h2>Soba</h2></a
+            >
+            <blockquote
+              cite="https://www.intrepidscout.com/quotes-about-japan/"
+            >
+              <p>
+                “Noodles arrived in Japan with Buddhist monks from China in the
+                Middle Ages, but until the twentieth century they tended to be
+                made from buckwheat, or a mix of wheat and rice.” — Bee Wilson
+              </p>
+            </blockquote>
+          </article>
+          <img class="image-soba" src="images/soba.jpg" alt="Soba" />
+          <article class="article-unadon">
+            <a
+              href="https://www.google.com/search?q=best+unagi+don+near+me&sca_esv=583450257&ei=FfRXZfymA9rk0PEPpfKjsA0&oq=best+unagi+don+&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2Jlc3QgdW5hZ2kgZG9uICoCCAUyBRAAGIAEMgUQABiABDIFEAAYgAQyBBAAGB4yBBAAGB4yBBAAGB4yBBAAGB4yBBAAGB4yBBAAGB4yBBAAGB5IjFhQqwxYpE1wCHgAkAEAmAF6oAHuCaoBAzUuN7gBAcgBAPgBAcICBxAAGB4YsAPCAgkQABiABBgNGBPCAgcQABiABBgT4gMEGAEgQYgGAZAGAQ&sclient=gws-wiz-serp"
+              ><h2>Unadon</h2></a
+            >
+            <blockquote
+              cite="https://www.intrepidscout.com/quotes-about-japan/"
+            >
+              <p>
+                “The real game, as I soon discover, is donburi. Donburi, often
+                shortened to don, means “bowl”, and the name encapsulates a vast
+                array of rice bowls topped with delicious stuff: oyakodon
+                (chicken and egg), unadon (grilled eel), tendon (tempura). As
+                nice as meat and tempura and eel can be, the donburi of yours
+                and mine and every sensible person's dreams is topped with a
+                rainbow bounty of raw fish. Warm rice, cool fish, a dab of
+                wasabi, a splash of soy- sushi, without the pageantry and
+                without the price tag.”
+              </p>
+            </blockquote>
+          </article>
+          <img class="image-unadon" src="images/unadon.jpg" alt="Unadon" />
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <a href="#top">
+          <svg
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            class="top-icon"
+          >
+            <title>Top Icon</title>
+            <path
+              d="m2.019 11.993c0 5.518 4.48 9.998 9.998 9.998 5.517 0 9.997-4.48 9.997-9.998s-4.48-9.998-9.997-9.998c-5.518 0-9.998 4.48-9.998 9.998zm1.5 0c0-4.69 3.808-8.498 8.498-8.498s8.497 3.808 8.497 8.498-3.807 8.498-8.497 8.498-8.498-3.808-8.498-8.498zm4.715-1.528s1.505-1.502 3.259-3.255c.147-.146.338-.219.53-.219s.384.073.53.219c1.754 1.753 3.259 3.254 3.259 3.254.145.145.217.336.216.527 0 .191-.074.383-.22.53-.293.293-.766.294-1.057.004l-1.978-1.978v6.694c0 .413-.336.75-.75.75s-.75-.337-.75-.75v-6.694l-1.978 1.979c-.29.289-.762.286-1.055-.007-.147-.146-.22-.338-.221-.53-.001-.19.071-.38.215-.524z"
+              fill-rule="nonzero"
+            />
+          </svg>
+        </a>
+        <p>&copy; FWD 2023. For Educational Purposes</p>
+      </footer>
+    </div>
+  </body>
+</html>
