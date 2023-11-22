@@ -1,0 +1,339 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #282828;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  margin: 0.5em 0;
+  font-size: 1.75rem;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+/* Elements
+--------------------------------------------- */
+section,
+aside {
+  padding: 0 1rem;
+}
+
+/* Links
+--------------------------------------------- */
+a,
+a:visited {
+  color: #008000;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 1px dotted;
+}
+
+.product-link {
+  display: block;
+  width: 8rem;
+  padding: 1rem;
+  background-color: #347034;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.product-link:hover,
+.product-link:focus,
+.product-link:active {
+  background-color: #234723;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+.site-wrapper {
+  /* This is for very large screens */
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Header
+--------------------------------------------- */
+
+header a {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: black;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.site-header {
+  background-color: white;
+  /* add flex styles here */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  max-width: 6rem;
+  margin: 1rem;
+}
+
+.site-logo img {
+  display: block;
+}
+
+.site-navigation {
+  padding: 0 1rem;
+}
+
+.site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* START -- STYLES FOR MOBILE MENU */
+/* we will cover this more later */
+.site-navigation ul {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+
+.menu-toggle:focus {
+  border: 0;
+  outline: 1px dotted;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+/* END -- STYLES FOR MOBILE MENU */
+
+/*800px and up apply this layout*/
+@media (min-width: 50em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-name {
+    font-size: 1.5rem;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-right: 0;
+  }
+
+  .site-navigation {
+    padding: 0 1rem;
+    display: flex;
+    /* add flex styles here */
+    /* flex: 1 1 auto; */
+    justify-content: flex-end;
+  }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+    /* add flex styles here */
+    display: flex;
+
+    /* START - Remove Mobile Menu Styles */
+    position: relative;
+    top: 0;
+    /* END - Remove Mobile Menu Styles  */
+  }
+
+  .site-navigation a {
+    line-height: 2rem; /* Matches the height of the .site-logo: 6rem + 1rem + 1rem */
+    padding: 0 1rem;
+  }
+  .section-about {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 30rem;
+  }
+  .section-products {
+    display: flex;
+  }
+
+  .products-sidebar {
+    order: -1;
+    width: 25%;
+    margin-top: -3rem;
+  }
+
+  .products-sidebar h2 {
+    font-size: 1.5rem;
+  }
+
+  .products-wrapper {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .products-sidebar ul {
+    padding-left: 2rem;
+  }
+}
+
+/* Main
+--------------------------------------------- */
+/* Page Header */
+.page-header {
+  position: relative;
+}
+
+.page-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-header img {
+  display: block;
+  object-fit: cover;
+  min-height: 25rem;
+}
+
+@media (min-width: 50em) {
+  .page-header h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Section: About */
+.section-about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.section-about h2 {
+  text-align: center;
+}
+
+/* Section: Products */
+.products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+article {
+  box-shadow: 0 0 5px 0.1px gray;
+  margin-bottom: 1rem;
+}
+
+.product-text {
+  padding: 1rem;
+}
+
+.product-name {
+  font-size: 1.5rem;
+}
+
+.products-sidebar {
+  padding: 2rem;
+}
+
+/*  */
+/* Footer
+--------------------------------------------- */
+
+footer ul {
+  padding: 0rem;
+  list-style-type: none;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: lightgrey;
+  padding: 3rem;
+}
+
+@media (min-width: 50em) {
+  .site-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+}
