@@ -1,0 +1,136 @@
+<head>
+  <link rel="stylesheet" href="/resources/styles_basic.css" />
+  <script defer src="../../resources/footer.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>1-6 Workshop | Conditionals and External Scripts</h1>
+    <a href="./">Back</a>
+  </header>
+  <main>
+    <section>
+      <h2>External Scripts</h2>
+      <hr />
+      <p>
+        Most of the time, your JavaScript will be written in a separate file,
+        like you do with CSS. Up until this point we've been using embedded
+        script tags, as it is better for prototyping.
+      </p>
+      <p>
+        However, there are several benefits to having external script files:
+      </p>
+      <ul>
+        <li>
+          The browser can cache a copy of the script, so if many pages on your
+          site need to use it the browser only downloads it once.
+        </li>
+        <li>It can keep your HTML much cleaner and easier to read.</li>
+        <li>
+          Over time, code is much more maintainable if it is not spread out
+          across little files.
+        </li>
+      </ul>
+      <p>
+        Let's create a script file in the <code>day1/resources/</code> folder.
+        Then add it using a script element.
+      </p>
+      <img src="../resources/external_js.excalidraw.png" alt="" />
+      <h3>IMPORTANT: Order of execution</h3>
+      <p>
+        It is important that our JavaScript runs AFTER our HTML has been fully
+        processed by the browser. To make sure that happens we have 2 choices:
+      </p>
+      <ol>
+        <li>
+          Place the <code>script</code> element at the bottom of our document.
+        </li>
+        <li>
+          Use the <code>defer</code> attribute to tell the browser "wait until
+          the rest of the page is loaded, before you load this file."
+        </li>
+      </ol>
+      <p>Using a defer attribute looks like this:</p>
+      <code>&lt;script defer src=&quot;../resources/1-6_DONE.js&quot; /&gt;
+      </code>
+      <p>
+        So long as you use that, you can add your scripts in the
+        <code>head</code> of your HTML with no issues.
+      </p>
+    </section>
+    <section>
+      <h2>Sloppy vs. Strict Modes of JavaScript</h2>
+      <p>
+        "Old School" JavaScript used to allow developers to write code that was
+        shall we say more <i>"loosey goosey"</i>. Modern JavaScript introduced a
+        newer "strict mode" which can help developers in several ways:
+      </p>
+      <ul>
+        <li>
+          Catches errors that in older versions of JavaScript would "silently
+          fail"
+        </li>
+        <li>
+          Encourages the developers through more precise error messages to write
+          better code
+        </li>
+        <li>
+          Prevents developers from using certain keywords that are reserved for
+          future versions of JavaScript
+        </li>
+      </ul>
+      <p>
+        To enable strict mode in your external JavaScript files, add
+        <code>"use strict";</code> to the top of your script file.
+      </p>
+    </section>
+    <section>
+      <h2>Conditional Logic, and Control Flow</h2>
+      <hr />
+      <p>
+        We need to write code <i>defensively</i>, because we need to account for
+        all the things the user might do. To do that, we have to think about
+        control flow.
+      </p>
+      <p>
+        Lets go back to our 1-3 and 1-4 example with the
+        <code>prompt()</code> method. We learned through our dev tools that
+        depending on how the user fills out (or does not fill out) the prompt,
+        different values are <i>returned</i> to our code. We can end up with a
+        string that contains characters(<code>"Bob"</code>), an empty string
+        (<code>""</code>), or <code>null</code>.
+      </p>
+      <p>
+        I like to imagine my code as water flowing down stream, and depending on
+        certain <i>conditions</i> different gates will open or close, changing
+        the flow of the water.
+      </p>
+      <p>That, in essence is conditional logic.</p>
+      <p>
+        Lets add some conditional logic, so that we only change the text when
+        the user supplies us with a very specific name, "Bob".
+      </p>
+      <h3>Hi, <span id="name">No-Name</span>!</h3>
+      <img src="../resources/conditionals.excalidraw.png" alt="" />
+      <p>
+        Using conditionals, we control what code is executed and which isn't,
+        depending on the state of our application and behavior of the user.
+      </p>
+      <p>
+        Get the hang of that, then you are basically controlling where electrons
+        flow using your mind, which is pretty rad.
+        <span class="emoji"> 😎 </span>
+      </p>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+<script defer src="../resources/1-6_DONE.js"></script>

@@ -1,0 +1,105 @@
+<head>
+  <link rel="stylesheet" href="/resources/styles_basic.css" />
+  <script defer src="../../resources/footer.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>1-5 Workshop | DOM, Events and Listeners</h1>
+    <a href="./">Back</a>
+  </header>
+  <main>
+    <section>
+      <h2>DOM & API</h2>
+      <hr />
+      <p>
+        Your JavaScript code interacts with the HTML written on the page, using
+        something called a DOM API. Lets break those concepts down.
+      </p>
+      <h3>API</h3>
+      <p>
+        An API is a bit of a squishy term, but at its core -- it is just code
+        that has already been written by other developers, designed to be easy
+        to use to make your job easier.
+      </p>
+      <img src="../resources/what_is_api.excalidraw.png" alt="" />
+      <h3>DOM</h3>
+      <p>
+        The DOM takes the HTML written on the page, and turns it into a "tree".
+      </p>
+      <img src="../resources/the_DOM.excalidraw.png" alt="" />
+      <p>
+        Why is this called a tree, when the root is at the top? Because
+        programmers never go outside.
+      </p>
+      <p>
+        All you really need to know, is that the browser turns your HTML into a
+        model, which you can then interact with via APIs.
+      </p>
+    </section>
+    <section>
+      <h2>Events</h2>
+      <hr />
+      <p>
+        Everything you do on the browser, is firing a constant stream of events.
+        If we don't have any code written to detect them, we don't know they are
+        happening. Let's change that. With your dev console open, click anywhere
+        on the page.
+      </p>
+      <script>
+        // The event contains WAYYY more information than you will need for most purposes.
+        // For now, I will extract the X and Y coordinates of where you clicked, and display them.
+        document.addEventListener("click", (event) => {
+          console.log(
+            "Click Detected!",
+            "X:",
+            event.clientX,
+            "Y:",
+            event.clientY
+          );
+          // If you are curious, the full event object is also logged, and you can investigate it using your console.
+          console.log(event);
+        });
+      </script>
+      <p>
+        Adding an event listener to the entire document is a bit overkill,
+        usually we want to listen for <i>specific</i> elements, like clicking on
+        a button for example.
+      </p>
+      <h3>Creating an event listener</h3>
+      <p>
+        For this example, lets create a segment of text that is hidden, and a
+        button which will unhide it once clicked.
+      </p>
+      <p hidden id="hidden">I am hidden!</p>
+      <button id="unhide">Click Me!</button>
+      <script>
+        // 1. We get our elements and store them in variables, this time lets use the getElementById method
+        let hiddenTextElem = document.getElementById("hidden");
+        let unhideButtonElem = document.getElementById("unhide");
+
+        // 2. Lets add an event listener to the button, and listen for the click event
+        unhideButtonElem.addEventListener("click", (event) => {
+          // 3. When the button is clicked, we will set the hidden property of the hiddenTextElem to false
+          hiddenTextElem.hidden = false;
+        });
+      </script>
+      <p>Let's break down this syntax.</p>
+      <img src="../resources/click_event_listener.excalidraw.png" alt="" />
+      <p>
+        The <code>(event) => {hiddenTextElem.hidden = false;}</code> part is
+        known as a "callback function". We will go into more detail on functions
+        next class. For now, think of a function as a reusable chunk of code.
+      </p>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+<script></script>

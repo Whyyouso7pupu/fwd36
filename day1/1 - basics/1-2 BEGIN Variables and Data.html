@@ -1,0 +1,52 @@
+<head>
+  <link rel="stylesheet" href="/resources/styles_basic.css" />
+  <script defer src="../../resources/footer.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>1-2 Workshop | Variables and Data</h1>
+    <a href="./">Back</a>
+  </header>
+  <main>
+    <section>
+      <h2>Variables</h2>
+      <hr />
+      <div class="box"></div>
+      <p>
+        Let's write some code that uses the built-in tools from the browser to
+        grab that div with the class of box and change its background color to
+        blue.
+      </p>
+      <p>To do that, we need to use a variable.</p>
+      <h3>What is a variable?</h3>
+      <img src="../resources/what_is_a_variable.excalidraw.png" alt="" />
+      <h3>How do we use variables?</h3>
+      <img src="../resources/how_to_use_variables.excalidraw.png" alt="" />
+      <h3>Ok.. But how do we get the box?</h3>
+      <img src="../resources/get_data_from_browser.excalidraw.png" alt="" />
+      <h3>OK let me change the box already</h3>
+      <p>
+        <code>querySelector</code> gives us the box, but how do we change it?
+      </p>
+      <p>
+        We can use the <code>style</code> property to change the style of the
+        box. We can change the background color by setting the
+        <code>backgroundColor</code> property.
+      </p>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+<script>
+  let divElement = document.querySelector(".box");
+  //
+  divElement.style.backgroundColor = "yellow";
+</script>

@@ -1,0 +1,80 @@
+<head>
+  <link rel="stylesheet" href="/resources/styles_basic.css" />
+  <script defer src="../../resources/footer.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>1-4 Workshop | Dev Tools and Logging</h1>
+    <a href="./">Back</a>
+  </header>
+  <main>
+    <section>
+      <h2>Developer Tools</h2>
+      <hr />
+      <div class="box"></div>
+      <p>
+        The fun part about JavaScript, is you never really know the value of
+        your variable, until something breaks!
+      </p>
+      <p>
+        Take this code for example, we are trying to change the background color
+        of a box from red to blue again, but it isn't working.
+      </p>
+      <script>
+        let box = document.querySelector(".box");
+        box.styles.backgroundColor = "blue";
+      </script>
+      <p>
+        From the browser alone, it doesn't look like anything has gone wrong.
+        Let's open up the developer tools and see what's going on.
+      </p>
+      <img src="../resources/devTools.png" alt="" />
+      <p>
+        Translating these errors back into english can be a challenge at first..
+        Any guesses?
+      </p>
+      <p>
+        I recommend always having your console open when you are working on a
+        project.
+      </p>
+    </section>
+    <section>
+      <h2>Logging</h2>
+      <hr />
+      <p>
+        You can also add your own messages to the console, using
+        <code>console.log()</code>
+      </p>
+      <p>
+        This is a very helpful tool for debugging, as well as getting a better
+        understanding of how your code is flowing.
+      </p>
+      <p>Lets reuse our prompt example from 1-3, but add logging.</p>
+      <h3>Hi, <span id="name">No-Name!</span></h3>
+      <script>
+        // 1. Create a variable, but don't assign a value yet
+        let name;
+        console.log("Current value of name variable is: ", name);
+        // 2. Gather name from user, uncomment the line below
+        name = prompt("What is your name?");
+        console.log(""Current value of name variable is: ", name");
+
+        // 3. Get span by its ID using the document.getElementById method
+        let nameSpanElement = document.getElementById("name");
+
+
+        // 4. Set the innerText property of the span to the name value we gathered from the user
+      </script>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+<script></script>
