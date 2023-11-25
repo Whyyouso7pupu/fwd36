@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Nunito:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <!--  
+
+*** Form should have a max-width of
+480px and should be centred along
+the left / right axis within the
+browser
+
+Select Menu Values
+
+Web
+  Front-End Developer
+  PHP Developer
+  Python Developer
+  Rails Developer
+  Web Designer
+  WordPress Developer
+
+Mobile
+  Android Developer
+  iOS Developer
+  Mobile Designer
+
+Business
+  Business Owner
+  Freelancer
+
+Other
+  Secretary
+  Maintenance
+
+-->
+  <body>
+    <section>
+      <h1>Sign Up</h1>
+      <form action="/" method="post">
+        <h2><span class="green">1</span>Your basic info</h2>
+        <div class="info-group">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="pw">Password:</label>
+            <input type="text" id="pw" name="pw" />
+          </div>
+        </div>
+        <p>Age:</p>
+        <div class="">
+          <input type="radio" name="age" id="under13" value="under13" />
+          <label for="under13">Under 13</label>
+        </div>
+        <div class="">
+          <input type="radio" name="age" id="older" value="older" />
+          <label for="older">13 or older</label>
+        </div>
+        <h2><span class="green">2</span>Your profile</h2>
+        <div class="form-group biography-group">
+          <label for="biography">Biography:</label>
+          <textarea name="biography" id="biography"></textarea>
+        </div>
+        <div class="form-group group-job">
+          <label for="job-role">Job Role:</label>
+          <select name="job-role" id="job-role">
+            <optgroup label="Web">
+              <option value="Front-End Developer">Front-End Developer</option>
+              <option value="PHP Developer">PHP Developer</option>
+              <option value="Python Developer">Python Developer</option>
+              <option value="Rails Developer">Rails Developer</option>
+              <option value="Web Designer">Web Designer</option>
+              <option value="WordPress Developer">WordPress Developer</option>
+            </optgroup>
+            <optgroup label="Mobile">
+              <option value="Android Developer">Android Developer</option>
+              <option value="iOS Developer">iOS Developer</option>
+              <option value="Mobile Designer">Mobile Designer</option>
+            </optgroup>
+            <optgroup label="Business">
+              <option value="Business Owner">Business Owner</option>
+              <option value="Freelancer">Freelancer</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="Secretary">Secretary</option>
+              <option value="Maintenance">Maintenance</option>
+            </optgroup>
+          </select>
+        </div>
+        <p>Interests:</p>
+        <div class="group-interests">
+          <input
+            type="checkbox"
+            name="development"
+            id="development"
+            value="development"
+          />
+          <label for="development">Development</label>
+
+          <div class="">
+            <input type="checkbox" name="design" id="design" value="design" />
+            <label for="design">Design</label>
+          </div>
+          <div class="">
+            <input
+              type="checkbox"
+              name="business"
+              id="business"
+              value="business"
+            />
+            <label for="business">Business</label>
+          </div>
+        </div>
+        <div class="form-group group-submit">
+          <input type="submit" value="Sign Up" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
